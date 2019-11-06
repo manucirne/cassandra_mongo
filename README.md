@@ -8,8 +8,9 @@ Site oficial: [Cassandra](http://cassandra.apache.org/)
 
 Gerenciador de banco de dados open source com diversas funcionalidades. Dentre elas:
 
-- Estrutura é NoSQL
-- Desenvolvido para evitar perdas já que seus dados são armazenados em diversos nós
+- Estrutura NoSQL
+- Dados copiados e armazenados em diversos nós
+- Desenvolvido para evitar perdas
 - Elástico, onde é possível ler e escrever ao mesmo tempo que novos nós são adicionados, sem perda de performance
 - É possível escolher se as atualizações são feitas de forma sincrona ou assíncrona
 - Alta disponibilidade para operações assincronas
