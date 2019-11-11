@@ -1,6 +1,6 @@
 # MongoDB
 
-Tutorial para instalação e utilização do mongoDB
+Tutorial para instalação, conexão e desinstalação do mongoDB
 
 [Instalação](#Instalação)
 
