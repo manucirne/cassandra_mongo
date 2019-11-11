@@ -4,11 +4,31 @@ Tutorial para instalação, conexão e desinstalação do mongoDB
 
 Informações retiradas do [site oficial](https://docs.mongodb.com/manual/administration/install-on-linux/)
 
-[Instalação](#Instalação)
+- [Instalação](#Instalação)
 
-[Conexão](#Conexão)
+    1) [Baixando a chave pública](#1.-Baixando-a-chave-pública)
 
-[Desintalação](#Desintalação)
+    2) [Criando uma lista de arquivos](#2.-Criando-uma-lista-de-arquivos)
+
+    3) [Recarregue o pacote local](#3.-Recarregue-o-pacote-local)
+
+    4) [Instalando os pacotes do MongoDB](#4.-Instalando-os-pacotes-do-MongoDB)
+
+- [Conexão](#Conexão)
+
+    - [Iniciando o MongoDB](#1.-Iniciando-o-MongoDB)
+
+    - [Finalizando o MongoDB](#2.-Finalizando-o-MongoDB)
+
+    - [Recomeçando o MongoDB](#3.-Recomeçando-o-MongoDB)
+
+    - [Conectando ao MongoDB](#4.-Utilizando-o-MongoDB)
+
+- [Desintalação](#Desintalação)
+
+    1) [Removendo os pacotes](#1.-Removendo-os-pacotes)
+
+    2) [Removendo os diretórios de dados](#2.-Removendo-os-diretórios-de-dados)
 
 ---
 ## Instalação
@@ -20,16 +40,16 @@ Informações retiradas do [site oficial](https://docs.mongodb.com/manual/admini
 
 *Existe apenas no passo 2 (Criando uma lista de arquivos) diferenças nos comandos executados.
 
-[1- Baixando a chave pública](#1--Baixando-a-chave-pública)
+1) [Baixando a chave pública](#1.-Baixando-a-chave-pública)
 
-[2- Criando uma lista de arquivos](#2--Criando-uma-lista-de-arquivos)
+2) [Criando uma lista de arquivos](#2.-Criando-uma-lista-de-arquivos)
 
-[3- Recarregue o pacote local](#3--Recarregue-o-pacote-local)
+3) [Recarregue o pacote local](#3.-Recarregue-o-pacote-local)
 
-[4- Instalando os pacotes do MongoDB](#4--Instalando-os-pacotes-do-MongoDB)
+4) [Instalando os pacotes do MongoDB](#4.-Instalando-os-pacotes-do-MongoDB)
 
 ---
-### 1- Baixando a chave pública
+### 1. Baixando a chave pública
 
 Para iniciar a instalação, de um terminal, importe a chave pública do MongoDB para sua máquina.
 
@@ -47,7 +67,7 @@ Você deverá receber um `OK` como confirmação.
 > 
 > E por fim rodar o comando novamente.
 
-### 2- Criando uma lista de arquivos
+### 2. Criando uma lista de arquivos
 
 Esse é o único comando desta etapa que tem diferença para as versões utilizadas.
 
@@ -61,13 +81,13 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/
 echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
 ```
 
-### 3- Recarregue o pacote local
+### 3. Recarregue o pacote local
 
 ```
 sudo apt-get update
 ```
 
-### 4- Instalando os pacotes do MongoDB
+### 4. Instalando os pacotes do MongoDB
 
 Para instalar basta copiar o código abaixo:
 
@@ -82,16 +102,16 @@ Com isso, o MongoDB esta instlado em sua máquina! Siga a próxima sessão para 
 
 Feita a instalação, agora é o momento de conectar sua máquina ao Mongo.
 
-[1- Iniciando o MongoDB](#1--Iniciando-o-MongoDB)
+1) [Iniciando o MongoDB](#1.-Iniciando-o-MongoDB)
 
-[2- Finalizando o MongoDB](#2--Finalizando-o-MongoDB)
+2) [Finalizando o MongoDB](#2.-Finalizando-o-MongoDB)
 
-[3- Recomeçando o MongoDB](#3--Recomeçando-o-MongoDB)
+3) [Recomeçando o MongoDB](#3.-Recomeçando-o-MongoDB)
 
-[4- Conectando ao MongoDB](#3--Utilizando-o-MongoDB)
+4) [Conectando ao MongoDB](#4.-Utilizando-o-MongoDB)
 
 ---
-### 1- Iniciando o MongoDB
+### 1. Iniciando o MongoDB
 
 Para inicializar, basta copiar o comando abaixo:
 
@@ -103,21 +123,21 @@ Mongod é o processo daemon para o MongoDB. Ele serve para os requerimentos feit
 
 Verifique se o processo iniciou com sucesso analisando o arquivo de log do MongoDB em `/var/log/mongodb/mongod.log`. A porta 27017 é a padrão de execução para o processo mongod.
 
-### 2- Finalizando o MongoDB
+### 2. Finalizando o MongoDB
 
 ```
 sudo service mongod stop
 ```
 
-### 3- Recomeçando o MongoDB
+### 3. Recomeçando o MongoDB
 
 ```
 sudo service mongod restart
 ```
 
-### 4- Conectando ao MongoDB
+### 4. Conectando ao MongoDB
 
-Com o MongoDB rodando em sua máquina, na porta 27017, basta executar o comando abaixo no seu terminal para se conectar.
+É necessário que o MongoDB esteja rodando em sua máquina, na porta 27017. Para isso basta seguir o passo [iniciando o MongoDB](#1.-Iniciando-o-MongoDB). Feito isso, bastaexecutar o comando abaixo no seu terminal para se conectar.
 
 ```
 mongo
@@ -132,12 +152,12 @@ Uma vez conectado, para sair, basta digitar `exit`.
 
 Para desintalar completamente o MongoDB de sua máquina, primeiro [finalize o processo](#2--Finalizando-o-MongoDB) caso esteja sendo executado.
 
-[1- Removendo os pacotes](#1--Removendo-os-pacotes)
+1) [Removendo os pacotes](#1.-Removendo-os-pacotes)
 
-[2- Removendo os diretórios de dados](#2--Removendo-os-diretórios-de-dados)
+2) [Removendo os diretórios de dados](#2.-Removendo-os-diretórios-de-dados)
 
 ---
-### 1- Removendo os pacotes
+### 1. Removendo os pacotes
 
 Remova os pacotes do MongoDB que foram instalados previamente
 
@@ -145,7 +165,7 @@ Remova os pacotes do MongoDB que foram instalados previamente
 sudo apt-get purge mongodb-org*
 ```
 
-### 2- Removendo os diretórios de dados
+### 2. Removendo os diretórios de dados
 
 Remova a base de dados do MongoDB e os arquivos de log
 
