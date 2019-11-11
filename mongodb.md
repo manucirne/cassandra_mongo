@@ -2,6 +2,8 @@
 
 Tutorial para instalação, conexão e desinstalação do mongoDB
 
+Informações retiradas do [site oficial](https://docs.mongodb.com/manual/administration/install-on-linux/)
+
 [Instalação](#Instalação)
 
 [Conexão](#Conexão)
@@ -11,8 +13,12 @@ Tutorial para instalação, conexão e desinstalação do mongoDB
 ---
 ## Instalação
 
-- Sistema Operacional: Ubuntu Server 16.04 Linux 64-bit x86
+- Sistema Operacional:
+    - Ubuntu Server 16.04 (Xenial) Linux 64-bit x86
+    - Ubuntu Server 18.04 (Bionic) Linux 64-bit x86*
 - Versão do MongoDB: 4.2
+
+*Existe apenas no passo 2 (Criando uma lista de arquivos) diferenças nos comandos executados.
 
 [1- Baixando a chave pública](#1--Baixando-a-chave-pública)
 
@@ -43,8 +49,16 @@ Você deverá receber um `OK` como confirmação.
 
 ### 2- Criando uma lista de arquivos
 
+Esse é o único comando desta etapa que tem diferença para as versões utilizadas.
+
+- Ubuntu 16.04 (Xenial)
 ```
 echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+```
+
+- Ubuntu 18.04 (Bionic)
+```
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
 ```
 
 ### 3- Recarregue o pacote local
