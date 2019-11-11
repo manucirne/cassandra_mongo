@@ -1,7 +1,14 @@
 # MongoDB
 
-Tutorial para instalação do mongoDB
+Tutorial para instalação e utilização do mongoDB
 
+[Instalação](#Instalação)
+
+[Utilização](#Utilização)
+
+[Desintalação](#Desintalação)
+
+---
 ## Instalação
 
 - Sistema Operacional: Ubuntu Server 16.04 Linux 64-bit x86
@@ -15,6 +22,7 @@ Tutorial para instalação do mongoDB
 
 [4- Instalando os pacotes do MongoDB](#4--Instalando-os-pacotes-do-MongoDB)
 
+---
 ### 1- Baixando a chave pública
 
 Para iniciar a instalação, de um terminal, importe a chave pública do MongoDB para sua máquina.
@@ -26,11 +34,11 @@ wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add 
 Você deverá receber um `OK` como confirmação.
 
 > Caso receba um erro indicando `gnupg is not installed` você deve instalar ele:
-
+> 
 > ```
 > sudo apt-get install gnupg
 > ```
-
+> 
 > E por fim rodar o comando novamente.
 
 ### 2- Criando uma lista de arquivos
@@ -54,3 +62,82 @@ sudo apt-get install -y mongodb-org
 ```
 
 Com isso, o MongoDB esta instlado em sua máquina! Siga a próxima sessão para entender como conectar e utilizar este gerenciador.
+
+---
+## Utilização
+
+Feita a instalação, agora é o momento de conectar com o Mongo e entender melhor como ele funciona.
+
+[1- Iniciando o MongoDB](#1--Iniciando-o-MongoDB)
+
+[2- Finalizando o MongoDB](#2--Finalizando-o-MongoDB)
+
+[3- Recomeçando o MongoDB](#3--Recomeçando-o-MongoDB)
+
+[4- Utilizando o MongoDB](#3--Utilizando-o-MongoDB)
+
+---
+### 1- Iniciando o MongoDB
+
+Para inicializar, basta copiar o comando abaixo:
+
+```
+sudo service mongod start
+```
+
+Mongod é o processo daemon para o MongoDB. Ele serve para os requerimentos feitos para o gerenciador tais como acessos e operações. 
+
+Verifique se o processo iniciou com sucesso, analisando o arquivo de log do MongoDB em `/var/log/mongodb/mongod.log`. A porta 27017 é a padrão de execução para o processo mongod.
+
+### 2- Finalizando o MongoDB
+
+```
+sudo service mongod stop
+```
+
+### 3- Recomeçando o MongoDB
+
+```
+sudo service mongod restart
+```
+
+### 4- Utilizando o MongoDB
+
+Com o MongoDB rodando em sua máquina, na porta 27017, basta executar o comando abaixo no seu terminal.
+
+```
+mongo
+```
+
+Feito isso, o gerenciador pode ser utilizado conforme sua necessidade.
+
+Uma vez conectado, para sair, basta digitar `exit`.
+
+---
+## Desintalação
+
+Para desintalar completamente o MongoDB de sua máquina, primeiro [finalize o processo](#2--Finalizando-o-MongoDB) caso esteja sendo executado.
+
+[1- Removendo os pacotes](#1--Removendo-os-pacotes)
+
+[2- Removendo os diretórios de dados](#2--Removendo-os-diretórios-de-dados)
+
+---
+### 1- Removendo os pacotes
+
+Remova os pacotes do MongoDB que foram instalados previamente
+
+```
+sudo apt-get purge mongodb-org*
+```
+
+### 2- Removendo os diretórios de dados
+
+Remova a base de dados do MongoDB e os arquivos de log
+
+```
+sudo rm -r /var/log/mongodb
+sudo rm -r /var/lib/mongodb
+```
+
+Feito isso, o MongoDB foi desinstalado e excluido definitavamente. Caso queira reinstalar ele, basta seguir o passos no começo do tutorial - [Instalação](#Instalação).
