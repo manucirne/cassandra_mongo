@@ -4,7 +4,7 @@ Tutorial para instalação e utilização do mongoDB
 
 [Instalação](#Instalação)
 
-[Utilização](#Utilização)
+[Conexão](#Conexão)
 
 [Desintalação](#Desintalação)
 
@@ -64,9 +64,9 @@ sudo apt-get install -y mongodb-org
 Com isso, o MongoDB esta instlado em sua máquina! Siga a próxima sessão para entender como conectar e utilizar este gerenciador.
 
 ---
-## Utilização
+## Conexão
 
-Feita a instalação, agora é o momento de conectar com o Mongo e entender melhor como ele funciona.
+Feita a instalação, agora é o momento de conectar sua máquina ao Mongo.
 
 [1- Iniciando o MongoDB](#1--Iniciando-o-MongoDB)
 
@@ -74,7 +74,7 @@ Feita a instalação, agora é o momento de conectar com o Mongo e entender melh
 
 [3- Recomeçando o MongoDB](#3--Recomeçando-o-MongoDB)
 
-[4- Utilizando o MongoDB](#3--Utilizando-o-MongoDB)
+[4- Conectando ao MongoDB](#3--Utilizando-o-MongoDB)
 
 ---
 ### 1- Iniciando o MongoDB
@@ -87,7 +87,7 @@ sudo service mongod start
 
 Mongod é o processo daemon para o MongoDB. Ele serve para os requerimentos feitos para o gerenciador tais como acessos e operações. 
 
-Verifique se o processo iniciou com sucesso, analisando o arquivo de log do MongoDB em `/var/log/mongodb/mongod.log`. A porta 27017 é a padrão de execução para o processo mongod.
+Verifique se o processo iniciou com sucesso analisando o arquivo de log do MongoDB em `/var/log/mongodb/mongod.log`. A porta 27017 é a padrão de execução para o processo mongod.
 
 ### 2- Finalizando o MongoDB
 
@@ -101,9 +101,9 @@ sudo service mongod stop
 sudo service mongod restart
 ```
 
-### 4- Utilizando o MongoDB
+### 4- Conectando ao MongoDB
 
-Com o MongoDB rodando em sua máquina, na porta 27017, basta executar o comando abaixo no seu terminal.
+Com o MongoDB rodando em sua máquina, na porta 27017, basta executar o comando abaixo no seu terminal para se conectar.
 
 ```
 mongo
