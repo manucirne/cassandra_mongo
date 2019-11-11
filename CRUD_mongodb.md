@@ -19,6 +19,8 @@ Nesse tutorial será ensinado como fazer um crud (Create, Read, Update, Delete) 
     - [Todos os Dados](#Todos-os-Dados)
     - [Query](#Query)
 
+4) [Alterando Dados](#Alterando-Dados)
+
 ---
 ## 1. Entendendo MongoDB
 
@@ -152,3 +154,6 @@ SELECT donos FROM nomeDaColecao WHERE idade = 3
 ```
 
 Para ter mais exemplos de query, entre no [site](https://docs.mongodb.com/manual/tutorial/query-documents/).
+
+---
+## 4. Alterando Dados
