@@ -26,3 +26,5 @@ Gerenciador de banco de dados open source baseado em documentos. Suas funcionali
 - Transações do tipo ACID
 
 Tutorial de instalação: [MongoDB](https://github.com/decoejz/cassandra-mongodb/blob/master/mongodb.md)
+
+CRUD simples: [CRUD](https://github.com/decoejz/cassandra-mongodb/blob/master/CRUD_mongodb.md#Criando-uma-Base-de-Dados)
