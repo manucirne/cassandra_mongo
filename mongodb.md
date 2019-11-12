@@ -30,6 +30,8 @@ Informações retiradas do [site oficial](https://docs.mongodb.com/manual/admini
 
     2) [Removendo os diretórios de dados](#2.-Removendo-os-diretórios-de-dados)
 
+- [CRUD com MongoDB](https://github.com/decoejz/cassandra-mongodb/blob/master/CRUD_mongodb.md)
+
 ---
 ## Instalação
 
@@ -175,3 +177,7 @@ sudo rm -r /var/lib/mongodb
 ```
 
 Feito isso, o MongoDB foi desinstalado e excluido definitavamente. Caso queira reinstalar ele, basta seguir o passos no começo do tutorial - [Instalação](#Instalação).
+
+---
+
+Quer aprender um pouco sobre a linguagem? Faça o tutorial de um [CRUD simples](https://github.com/decoejz/cassandra-mongodb/blob/master/CRUD_mongodb.md) com MongoDB.
