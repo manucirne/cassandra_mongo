@@ -17,11 +17,12 @@ Informações retiradas do [site oficial](http://cassandra.apache.org/doc/latest
 Para fazer a instalação do Cassandra, é necessário ter *Oracle Java Standard Edition 8* ou *OpenJDK 8* e *Python 2.7* instalados em sua máquina.
 
 Para baixar o OpenJDK no ubuntu basta digitar `sudo apt-get install openjdk-8-jre-headless`.
+Para baixar o python2 digite `sudo apt install python`
 
 1) Adicione o repositório Apache do Cassandra em sua máquina:
 
 ```
-echo "deb http://www.apache.org/dist/cassandra/debian 36x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
+echo "deb http://www.apache.org/dist/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
 ```
 
 2) Adicione as chaves da Cassandra em sua máquina:
@@ -38,7 +39,7 @@ Você deverá receber um `OK` como confirmação.
 > ```
 > Adicione a chave pública indicada pelo erro:
 > ```
-> sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key CHAVE_XXXXXX
+> sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key A278B781FE4B2BDA
 > ```
 
 3) Atualize o repositório:
@@ -50,7 +51,7 @@ sudo sudo apt update
 4) Instale o Cassandra:
 
 ```
-sudo apt install cassandra
+sudo apt-get install cassandra
 ```
 
 ---
@@ -75,23 +76,26 @@ sudo service cassandra start
 
 Para verificar que foi inicializado, digite `nodetool status`.
 
+Você deverá ter como resposta:
+```
+Datacenter: datacenter1
+=======================
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address    Load       Tokens       Owns (effective)  Host ID                               Rack
+UN  127.0.0.1  75.18 KiB  256          100.0%            97d4da70-83f1-4ed7-895e-1f58ec84e114  rack1
+
+```
+
 ### 2. Finalizando o Cassandra
 
 ```
 sudo service cassandra stop
 ```
-
-<!--export CQLSH_NO_BUNDLED=true-->
-<!--pip install cassandra-driver-->
-
-<!--### 3. Conectando ao Cassandra
-
-É necessário que o Cassandra esteja rodando em sua máquina, na porta 27017. Para isso basta seguir o passo [iniciando o MongoDB](#1.-Iniciando-o-MongoDB). Feito isso, bastaexecutar o comando abaixo no seu terminal para se conectar.
-
+depois disso o `nodetool status` irá devolver:
 ```
-mongo
+nodetool: Failed to connect to '127.0.0.1:7199' - ConnectException: 'Connection refused (Connection refused)'.
 ```
-
 Feito isso, o gerenciador pode ser utilizado conforme sua necessidade.
 
 Uma vez conectado, para sair, basta digitar `exit`.-->
