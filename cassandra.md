@@ -14,7 +14,7 @@ Informações retiradas do [site oficial](http://cassandra.apache.org/doc/latest
 - Sistema Operacional:
     - Ubuntu Server 18.04 (Bionic) Linux 64-bit x86
 
-Para fazer a instalação do Cassandra, é necessário ter Oracle Java Standard Edition 8 ou OpenJDK 8 instalados em sua máquina.
+Para fazer a instalação do Cassandra, é necessário ter *Oracle Java Standard Edition 8* ou *OpenJDK 8* e *Python 2.7* instalados em sua máquina.
 
 Para baixar o OpenJDK no ubuntu basta digitar `sudo apt-get install openjdk-8-jre-headless`.
 
@@ -80,6 +80,9 @@ Para verificar que foi inicializado, digite `nodetool status`.
 ```
 sudo service cassandra stop
 ```
+
+<!--export CQLSH_NO_BUNDLED=true-->
+<!--pip install cassandra-driver-->
 
 <!--### 3. Conectando ao Cassandra
 
