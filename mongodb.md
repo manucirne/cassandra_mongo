@@ -22,7 +22,7 @@ Informações retiradas do [site oficial](https://docs.mongodb.com/manual/admini
 
     - [Recomeçando o MongoDB](#3-Recomeçando-o-MongoDB)
 
-    - [Conectando ao MongoDB](#4-Utilizando-ao-MongoDB)
+    - [Conectando ao MongoDB](#4-Conectando-ao-MongoDB)
 
 - [Desintalação](#Desintalação)
 
@@ -110,7 +110,7 @@ Feita a instalação, agora é o momento de conectar sua máquina ao Mongo.
 
 3) [Recomeçando o MongoDB](#3-Recomeçando-o-MongoDB)
 
-4) [Conectando ao MongoDB](#4-Utilizando-ao-MongoDB)
+4) [Conectando ao MongoDB](#4-Conectando-ao-MongoDB)
 
 ---
 ### 1. Iniciando o MongoDB
