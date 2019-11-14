@@ -55,7 +55,7 @@ Esse mesmo comando deve ser utilizado para utilizar uma base de dados já existe
 
 Existem duas formas de adicionar uma nova coleção.
 
-1) Será criada no momento em que um novo dados for inserido nela já com o nome desejado para a coleção. Caso a coleção já exista o dado será apenas armazenado. Vejá a sessão [inserindo dados](#2.Inserindo-Dados).
+1) Será criada no momento em que um novo dados for inserido nela já com o nome desejado para a coleção. Caso a coleção já exista o dado será apenas armazenado. Vejá a sessão [inserindo dados](#2-Inserindo-Dados).
 
 2) Caso tenha o desejo de especificar restrições, é possível criar uma nova coleção utilizando o método de criação do MongoDB. Para isso utilize o comando `db.createCollection(nomeDesejado, opções)`. Existem diversas opções que podem ser inseridas no momento de criação de uma coleção. Todas elas podem ser encontradas no [site](https://docs.mongodb.com/manual/reference/method/db.createCollection/#db.createCollection).
 
@@ -167,7 +167,7 @@ Para ter mais exemplos de query, entre no [site](https://docs.mongodb.com/manual
 ---
 ## 4. Alterando Dados
 
-Em mongo existem três formas possíveis de atualizar uma informação na base de dados. São elas [alterar uma informação](#Alterar-uma-Informação), [alterar várias informações](Alterar-Várias-Informações) ou [substituir uma informação](Substituir-uma-Informação)
+Em mongo existem três formas possíveis de atualizar uma informação na base de dados. São elas [alterar uma informação](#Alterar-uma-Informação), [alterar várias informações](#Alterar-Várias-Informações) ou [substituir uma informação](#Substituir-uma-Informação)
 
 ### Alterar uma Informação
 
