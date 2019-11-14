@@ -20,6 +20,7 @@ Nesse tutorial será ensinado como fazer um crud (Create, Read, Update, Delete) 
 
 5) [Deletando Informações](#5-Deletando-Informações)
 
+6) [Fazendo Tudo ao Mesmo Tempo - Batch](#6-Fazendo-Tudo-ao-Mesmo-Tempo---Batch)
 ---
 ## 1. Entendendo Cassandra
 
