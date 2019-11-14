@@ -22,8 +22,8 @@ Nesse tutorial será ensinado como fazer um crud (Create, Read, Update, Delete) 
 4) [Alterando Dados](#4-Alterando-Dados)
 
     - [Alterar uma Informação](#Alterar-uma-Informação)
-    - [Alterar Várias Informações](Alterar-Várias-Informações)
-    - [Substituir uma Informação](Substituir-uma-Informação)
+    - [Alterar Várias Informações](#Alterar-Várias-Informações)
+    - [Substituir uma Informação](#Substituir-uma-Informação)
 
 5) [Deletando Informações](#5-Deletando-Informações)
 
