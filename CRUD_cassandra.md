@@ -138,5 +138,17 @@ DELETE telefone FROM Usuario
 DROP TABLE Usuarios;
 ```
 
+## 6. Fazendo Tudo ao Mesmo Tempo - Batch
+
+em cqlsh é possível fazer várias operações ao mesmo tempo com o cmando Batch. Veja um exemplo abixo.
+
+```
+BEGIN BATCH
+   INSERT INTO usuario (id, password, nome) VALUES (10, 'ch@ngem3b', 'Marilia');
+   UPDATE usuario SET password = 'ps22dhds' WHERE userid = 10;
+   INSERT INTO usuario (id, password) VALUES (30, 'kl3@ffl');
+   DELETE nome FROM usuario WHERE id = 50;
+APPLY BATCH;
+```
 
 Feito isso o CRUD esta completo. Esse tutorial é apenas uma introdução para o cqlsh do cassandra. Para obter mais informações sobre como ele funciona e possibilidade de métodos, entre no [site oficial](http://cassandra.apache.org/doc/latest/cql/index.html).
