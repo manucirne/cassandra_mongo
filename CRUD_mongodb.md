@@ -4,28 +4,28 @@ Informações retiradas do [site oficial](https://docs.mongodb.com/manual/crud/)
 
 Nesse tutorial será ensinado como fazer um crud (Create, Read, Update, Delete) utilizando o gerenciador MongoDB. Para seguir este tutorial você deve ter o MongoDB instalado na sua máquina e rodando ele. Caso ainda não tenha, basta seguir o [tutorial de instalação](https://github.com/decoejz/cassandra-mongodb/blob/master/mongodb.md).
 
-1) [Entendendo MongoDB](#1.-Entendendo-MongoDB)
+1) [Entendendo MongoDB](#1-Entendendo-MongoDB)
 
     - [Criando uma Base de Dados](#Criando-uma-Base-de-Dados)
     - [Criando uma Coleção](#Criando-uma-Coleção)
 
-2) [Inserindo Dados](#2.Inserindo-Dados)
+2) [Inserindo Dados](#2-Inserindo-Dados)
 
     - [Adicionando um Dado](#Adicionando-um-Dado)
     - [Adicionando Vários Dado](#Adicionando-Vários-Dados)
 
-3) [Lendo Dados](#3.-Lendo-Dados)
+3) [Lendo Dados](#3-Lendo-Dados)
 
     - [Todos os Dados](#Todos-os-Dados)
     - [Query](#Query)
 
-4) [Alterando Dados](#4.Alterando-Dados)
+4) [Alterando Dados](#4-Alterando-Dados)
 
     - [Alterar uma Informação](#Alterar-uma-Informação)
     - [Alterar Várias Informações](Alterar-Várias-Informações)
     - [Substituir uma Informação](Substituir-uma-Informação)
 
-5) [Deletando Informações](#5.-Deletando-Informações)
+5) [Deletando Informações](#5-Deletando-Informações)
 
     - [Deletar uma Informação](#Deletando-uma-Informação)
     - [Deletar Várias Informações](#Deletando-Diversas-Informações)
