@@ -13,6 +13,8 @@ Ambos são baseados em estruturas de dados NoSQL. Modelo ideal para quantidades 
 
 As duas são open source, o que torna o acesso fácil para qualquer um que gostaria de criar um banco de dados.
 
+Ambos tem diferentes linguagens que podem ser utilizadas para manusear eles, incluindo python, o que pode facilitar o desenvolvimento.
+
 Por fim, existe suporte para as três principais distribuições de sistemas operacionais: Windows, Linux e macOS.
 
 ---
@@ -66,7 +68,15 @@ Ambos os gerenciadores tem sites próprios que contêm diversos tutoriais, desde
 
 Ao analisar eles, os tutoriais de **MongoDB** aparentam ser mais simples e fáceis de compreender do que os do **Cassandra**.
 
+### Comentários Gerais
+
+- **Cassandra** não tem suporte para indexações, as próprias queries resolverão esse problema. Já o **MongoDB** é mais preferível ter indexação já que caso não tenha, o documento inteiro deverá ser rodado para encontrar o desejado.
+
+- **Cassandra** tem dependências de ter Java instalado nas máquinas, enquanto que **MongoDB** não tem necessidade de nada específico.
+
 ---
 ### Referências
 
 - [The Server Side](https://www.theserverside.com/tip/A-side-by-side-comparison-of-MongoDB-and-Cassandra-databases) - último acesso 14 de outubro de 2019
+
+- [Panoplay Blog](https://blog.panoply.io/cassandra-vs-mongodb) - último acesso 14 de outubro de 2019
