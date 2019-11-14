@@ -16,7 +16,9 @@ Informações retiradas do [site oficial](http://cassandra.apache.org/doc/latest
 
 Para fazer a instalação do Cassandra, é necessário ter *Oracle Java Standard Edition 8* ou *OpenJDK 8* e *Python 2.7* instalados em sua máquina.
 
-Para baixar o OpenJDK no ubuntu basta digitar `sudo apt-get install openjdk-8-jre-headless`.
+Inicie o processo atualizando o repositório com `sudo apt-get update`. Depois continue com os comandos que seguem.
+
+Para baixar o OpenJDK 8 no ubuntu basta digitar `sudo apt-get install openjdk-8-jre-headless`.
 Para baixar o python2 digite `sudo apt install python`
 
 1) Adicione o repositório Apache do Cassandra em sua máquina:
