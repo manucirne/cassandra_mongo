@@ -39,7 +39,7 @@ Você deverá receber um `OK` como confirmação.
 > ```
 > Adicione a chave pública indicada pelo erro:
 > ```
-> sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key A278B781FE4B2BDA
+> sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-key CHAVE_XXXXXX
 > ```
 
 3) Atualize o repositório:
@@ -98,4 +98,4 @@ nodetool: Failed to connect to '127.0.0.1:7199' - ConnectException: 'Connection 
 ```
 Feito isso, o gerenciador pode ser utilizado conforme sua necessidade.
 
-Uma vez conectado, para sair, basta digitar `exit`.-->
+Uma vez conectado, para sair, basta digitar `exit`.

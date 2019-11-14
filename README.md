@@ -1,7 +1,23 @@
-# Cassandra VS MongoDB
+# MongoDB VS Cassandra
 
 Esse projeto visa enteder quais as vantagens e desvantagens de cada um desses gerenciadores de banco de dados open source. Haverá um tutorial de instalação para cada um deles e junto uma comparação dos dois e em que momentos um é mais aconselhável que o outro.
 
+---
+## MongoDB
+
+Site oficial: [MongoDB](https://www.mongodb.com/)
+
+Gerenciador de banco de dados open source baseado em documentos. Suas funcionalidades são:
+
+- Estrutura NoSQL
+- Armazena arquivos do tipo JSON
+- Transações do tipo ACID
+
+Tutorial de instalação: [MongoDB](https://github.com/decoejz/cassandra-mongodb/blob/master/mongodb.md)
+
+CRUD simples: [CRUD](https://github.com/decoejz/cassandra-mongodb/blob/master/CRUD_mongodb.md)
+
+---
 ## Cassandra
 
 Site oficial: [Cassandra](http://cassandra.apache.org/)
@@ -17,16 +33,7 @@ Gerenciador de banco de dados open source com diversas funcionalidades. Dentre e
 
 Tutorial de instalação: [Cassandra](https://github.com/decoejz/cassandra-mongodb/blob/master/cassandra.md)
 
-## MongoDB
+---
+## Comparação entre MongoDB e Cassandra
 
-Site oficial: [MongoDB](https://www.mongodb.com/)
-
-Gerenciador de banco de dados open source baseado em documentos. Suas funcionalidades são:
-
-- Estrutura NoSQL
-- Armazena arquivos do tipo JSON
-- Transações do tipo ACID
-
-Tutorial de instalação: [MongoDB](https://github.com/decoejz/cassandra-mongodb/blob/master/mongodb.md)
-
-CRUD simples: [CRUD](https://github.com/decoejz/cassandra-mongodb/blob/master/CRUD_mongodb.md)
+Uma comparação mais detalhada entre o MongoDB e o Cassandra pode ser encontrado em [MongoDBvsCassandra](https://github.com/decoejz/cassandra-mongodb/blob/master/MongoDBvsCassandra.md).

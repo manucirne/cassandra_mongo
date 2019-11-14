@@ -6,29 +6,29 @@ Informações retiradas do [site oficial](https://docs.mongodb.com/manual/admini
 
 - [Instalação](#Instalação)
 
-    1) [Baixando a chave pública](#1.-Baixando-a-chave-pública)
+    1) [Baixando a chave pública](#1-Baixando-a-chave-pública)
 
-    2) [Criando uma lista de arquivos](#2.-Criando-uma-lista-de-arquivos)
+    2) [Criando uma lista de arquivos](#2-Criando-uma-lista-de-arquivos)
 
-    3) [Recarregue o pacote local](#3.-Recarregue-o-pacote-local)
+    3) [Recarregue o pacote local](#3-Recarregue-o-pacote-local)
 
-    4) [Instalando os pacotes do MongoDB](#4.-Instalando-os-pacotes-do-MongoDB)
+    4) [Instalando os pacotes do MongoDB](#4-Instalando-os-pacotes-do-MongoDB)
 
 - [Conexão](#Conexão)
 
-    - [Iniciando o MongoDB](#1.-Iniciando-o-MongoDB)
+    - [Iniciando o MongoDB](#1-Iniciando-o-MongoDB)
 
-    - [Finalizando o MongoDB](#2.-Finalizando-o-MongoDB)
+    - [Finalizando o MongoDB](#2-Finalizando-o-MongoDB)
 
-    - [Recomeçando o MongoDB](#3.-Recomeçando-o-MongoDB)
+    - [Recomeçando o MongoDB](#3-Recomeçando-o-MongoDB)
 
-    - [Conectando ao MongoDB](#4.-Utilizando-ao-MongoDB)
+    - [Conectando ao MongoDB](#4-Utilizando-ao-MongoDB)
 
 - [Desintalação](#Desintalação)
 
-    1) [Removendo os pacotes](#1.-Removendo-os-pacotes)
+    1) [Removendo os pacotes](#1-Removendo-os-pacotes)
 
-    2) [Removendo os diretórios de dados](#2.-Removendo-os-diretórios-de-dados)
+    2) [Removendo os diretórios de dados](#2-Removendo-os-diretórios-de-dados)
 
 - [CRUD com MongoDB](https://github.com/decoejz/cassandra-mongodb/blob/master/CRUD_mongodb.md)
 
@@ -42,13 +42,13 @@ Informações retiradas do [site oficial](https://docs.mongodb.com/manual/admini
 
 *Existe apenas no passo 2 (Criando uma lista de arquivos) diferenças nos comandos executados.
 
-1) [Baixando a chave pública](#1.-Baixando-a-chave-pública)
+1) [Baixando a chave pública](#1-Baixando-a-chave-pública)
 
-2) [Criando uma lista de arquivos](#2.-Criando-uma-lista-de-arquivos)
+2) [Criando uma lista de arquivos](#2-Criando-uma-lista-de-arquivos)
 
-3) [Recarregue o pacote local](#3.-Recarregue-o-pacote-local)
+3) [Recarregue o pacote local](#3-Recarregue-o-pacote-local)
 
-4) [Instalando os pacotes do MongoDB](#4.-Instalando-os-pacotes-do-MongoDB)
+4) [Instalando os pacotes do MongoDB](#4-Instalando-os-pacotes-do-MongoDB)
 
 ---
 ### 1. Baixando a chave pública
@@ -104,13 +104,13 @@ Com isso, o MongoDB esta instlado em sua máquina! Siga a próxima sessão para 
 
 Feita a instalação, agora é o momento de conectar sua máquina ao Mongo.
 
-1) [Iniciando o MongoDB](#1.-Iniciando-o-MongoDB)
+1) [Iniciando o MongoDB](#1-Iniciando-o-MongoDB)
 
-2) [Finalizando o MongoDB](#2.-Finalizando-o-MongoDB)
+2) [Finalizando o MongoDB](#2-Finalizando-o-MongoDB)
 
-3) [Recomeçando o MongoDB](#3.-Recomeçando-o-MongoDB)
+3) [Recomeçando o MongoDB](#3-Recomeçando-o-MongoDB)
 
-4) [Conectando ao MongoDB](#4.-Utilizando-ao-MongoDB)
+4) [Conectando ao MongoDB](#4-Utilizando-ao-MongoDB)
 
 ---
 ### 1. Iniciando o MongoDB
@@ -139,7 +139,7 @@ sudo service mongod restart
 
 ### 4. Conectando ao MongoDB
 
-É necessário que o MongoDB esteja rodando em sua máquina, na porta 27017. Para isso basta seguir o passo [iniciando o MongoDB](#1.-Iniciando-o-MongoDB). Feito isso, bastaexecutar o comando abaixo no seu terminal para se conectar.
+É necessário que o MongoDB esteja rodando em sua máquina, na porta 27017. Para isso basta seguir o passo [iniciando o MongoDB](#1-Iniciando-o-MongoDB). Feito isso, bastaexecutar o comando abaixo no seu terminal para se conectar.
 
 ```
 mongo
@@ -152,11 +152,11 @@ Uma vez conectado, para sair, basta digitar `exit`.
 ---
 ## Desintalação
 
-Para desintalar completamente o MongoDB de sua máquina, primeiro [finalize o processo](#2--Finalizando-o-MongoDB) caso esteja sendo executado.
+Para desintalar completamente o MongoDB de sua máquina, primeiro [finalize o processo](#2-Finalizando-o-MongoDB) caso esteja sendo executado.
 
-1) [Removendo os pacotes](#1.-Removendo-os-pacotes)
+1) [Removendo os pacotes](#1-Removendo-os-pacotes)
 
-2) [Removendo os diretórios de dados](#2.-Removendo-os-diretórios-de-dados)
+2) [Removendo os diretórios de dados](#2-Removendo-os-diretórios-de-dados)
 
 ---
 ### 1. Removendo os pacotes
