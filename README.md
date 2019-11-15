@@ -33,6 +33,8 @@ Gerenciador de banco de dados open source com diversas funcionalidades. Dentre e
 
 Tutorial de instalação: [Cassandra](https://github.com/decoejz/cassandra-mongodb/blob/master/cassandra.md)
 
+CRUD simples: [CRUD](https://github.com/decoejz/cassandra-mongodb/blob/master/CRUD_cassandra.md)
+
 ---
 ## Comparação entre MongoDB e Cassandra
 
