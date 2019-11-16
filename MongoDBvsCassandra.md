@@ -26,17 +26,17 @@ Cada um dos gerenciadores tem suas vantagens e desvantagens. Elas serão analisa
 
 Uma das questões que talvez sejá uma das mais importantes é a alta disponibilidade que o gerenciador tem. Caso seja uma aplicação com muitos acessos ao banco de dados e alta frequência, o ideal é buscar uma estrutura que garanta estabilidade nos momentos mais tranquilos de uso e também nos momentos com alta demanda. Se a aplicação for algo com poucos acessos ou baixa frequência, uma alta disponibilidade pode não ser referência como prioridade de projeto.
 
-Quando se trata de **MongoDB** a opção do usuário é de configurar apenas um único nó como master e outros como slave. Caso o nó master de problema, um dos slaves automaticamente vira o master. Esse processo não é imediato e pode levar alguns minutos.
+Quando se trata de **MongoDB** o usuário tem duas possibilidades. A primeira é criar um cluster, onde podem existir diversos nós master e slaves. Caso um master caia, um outro passa a tomar conta. A segunda opção é criar um replica set, onde existe um nó primário e outros secundários. O primário fica responsável pela escrita e leitura. Os nós secundário servem apenas para leitura.
 
 Já, ao tratar o **Cassandra**, a opção do usuário é de criar diversos nós masters, o que garante que caso algum falhe, outros estarão suprindo as necessidades imediatamente.
 
-### Velocidade de Escrita
+<!-- ### Velocidade de Escrita
 
 Essa analisa busca visualizar qual a velocidade de escrita de cada um dos gerenciadores.
 
 Como o **MongoDB** tem apenas um nó master, sua velocidade de escrita pode ser pequena quando comparada com o **Cassandra** que tem diversos nós masters que podem ser utilizados para escrita.
 
-Caso se tenha uma aplicação onde haverão muitas inserções, provavelmente o ideal é um gerenciador que faça essas ações de forma mais eficiente.
+Caso se tenha uma aplicação onde haverão muitas inserções, provavelmente o ideal é um gerenciador que faça essas ações de forma mais eficiente. -->
 
 ### Estrutura de Dados
 
@@ -77,6 +77,8 @@ Ao analisar eles, os tutoriais de **MongoDB** aparentam ser mais simples e fáce
 ---
 ### Referências
 
-- [The Server Side](https://www.theserverside.com/tip/A-side-by-side-comparison-of-MongoDB-and-Cassandra-databases) - último acesso 14 de outubro de 2019
+<!-- - [The Server Side](https://www.theserverside.com/tip/A-side-by-side-comparison-of-MongoDB-and-Cassandra-databases) - último acesso 14 de outubro de 2019
 
-- [Panoplay Blog](https://blog.panoply.io/cassandra-vs-mongodb) - último acesso 14 de outubro de 2019
+- [Panoplay Blog](https://blog.panoply.io/cassandra-vs-mongodb) - último acesso 14 de outubro de 2019 -->
+
+- [MongoDB](https://docs.mongodb.com)
