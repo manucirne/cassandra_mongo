@@ -74,7 +74,7 @@ Não é necessário incluir uma PRIMARY KEY.
 É possível encontrar os tipos aceitos na [documentação](http://cassandra.apache.org/doc/latest/cql/types.html) do cqlsh.
 
 ---
-## 1. Inserindo Dados
+## 2. Inserindo Dados
 
 Para adicionar dados a uma tabela utilize o comando a seguir:
 
@@ -85,7 +85,7 @@ insert into nome_tabela(parâmetro1, parâmetro2, parâmetro3) values ('nome', i
 É possível inserir maps, sets e lists. Os parêmetros colection e podem ser inseridos e modificados por inteiro em um mesmo comando.
 
 ---
-## 2. Lendo Dados
+## 3. Lendo Dados
 
 As operações de leitura retornam as informações contidas na tabela que esta sendo analisada. É possível pegar todos os dados de uma vez só ou criar queries para visualizar apenas os dados desejados.
 
