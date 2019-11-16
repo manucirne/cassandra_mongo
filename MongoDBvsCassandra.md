@@ -2,7 +2,7 @@
 
 Essa comparação visa mostrar quais as vantagens e desvantagens de cada um dos gerenciadores em questão. Além disso, apresentar em que aplicações e momentos um pode ser mais adequado que outros.
 
-Vale enfatizar que nesse documento tem informações retiradas de diversos sites como [referência](#Referências), além de em alguns pontos ter a opinião dos escritores.
+<!--Vale enfatizar que nesse documento tem informações retiradas de diversos sites como [referência](#Referências), além de em alguns pontos ter a opinião dos escritores.-->
 
 ---
 ## Similaridades
@@ -74,11 +74,12 @@ Ao analisar eles, os tutoriais de **MongoDB** aparentam ser mais simples e fáce
 
 - **Cassandra** tem dependências de ter Java 8 e Python 2.7 instalados nas máquinas, enquanto que **MongoDB** não tem necessidade de nada específico.
 
+<!--
 ---
 ### Referências
 
-<!-- - [The Server Side](https://www.theserverside.com/tip/A-side-by-side-comparison-of-MongoDB-and-Cassandra-databases) - último acesso 14 de outubro de 2019
+- [The Server Side](https://www.theserverside.com/tip/A-side-by-side-comparison-of-MongoDB-and-Cassandra-databases) - último acesso 14 de outubro de 2019
 
-- [Panoplay Blog](https://blog.panoply.io/cassandra-vs-mongodb) - último acesso 14 de outubro de 2019 -->
+- [Panoplay Blog](https://blog.panoply.io/cassandra-vs-mongodb) - último acesso 14 de outubro de 2019
 
-- [MongoDB](https://docs.mongodb.com)
+- [MongoDB](https://docs.mongodb.com) -->
