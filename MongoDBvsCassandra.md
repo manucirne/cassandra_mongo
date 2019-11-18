@@ -61,6 +61,6 @@ Ao analisar eles, os tutoriais de **MongoDB** aparentam ser mais simples e fáce
 
 ### Comentários Gerais
 
-- **Cassandra** não tem suporte para indexações, as próprias queries resolverão esse problema. Já o **MongoDB** é mais preferível ter indexação já que caso não tenha, o documento inteiro deverá ser rodado para encontrar o desejado.
+- **Cassandra** não tem a necessidade de ter indexações, as próprias queries resolverão esse problema. Já o **MongoDB** é mais preferível ter indexação já que caso não tenha, o documento inteiro deverá ser rodado para encontrar o desejado.
 
 - **Cassandra** tem dependências de ter Java 8 e Python 2.7 instalados nas máquinas, enquanto que **MongoDB** não tem necessidade de nada específico.
