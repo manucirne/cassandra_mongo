@@ -2,7 +2,6 @@
 
 Essa comparação visa mostrar quais as vantagens e desvantagens de cada um dos gerenciadores em questão. Além disso, apresentar em que aplicações e momentos um pode ser mais adequado que outros.
 
-<!--Vale enfatizar que nesse documento tem informações retiradas de diversos sites como [referência](#Referências), além de em alguns pontos ter a opinião dos escritores.-->
 
 ---
 ## Similaridades
@@ -29,14 +28,6 @@ Uma das questões que talvez sejá uma das mais importantes é a alta disponibil
 Quando se trata de **MongoDB** o usuário tem duas possibilidades. A primeira é criar um cluster, onde podem existir diversos nós master e slaves. Caso um master caia, um outro passa a tomar conta. A segunda opção é criar um replica set, onde existe um nó primário e outros secundários. O primário fica responsável pela escrita e leitura. Os nós secundário servem apenas para leitura.
 
 Já, ao tratar o **Cassandra**, a opção do usuário é de criar diversos nós masters, o que garante que caso algum falhe, outros estarão suprindo as necessidades imediatamente.
-
-<!-- ### Velocidade de Escrita
-
-Essa analisa busca visualizar qual a velocidade de escrita de cada um dos gerenciadores.
-
-Como o **MongoDB** tem apenas um nó master, sua velocidade de escrita pode ser pequena quando comparada com o **Cassandra** que tem diversos nós masters que podem ser utilizados para escrita.
-
-Caso se tenha uma aplicação onde haverão muitas inserções, provavelmente o ideal é um gerenciador que faça essas ações de forma mais eficiente. -->
 
 ### Estrutura de Dados
 
@@ -73,13 +64,3 @@ Ao analisar eles, os tutoriais de **MongoDB** aparentam ser mais simples e fáce
 - **Cassandra** não tem suporte para indexações, as próprias queries resolverão esse problema. Já o **MongoDB** é mais preferível ter indexação já que caso não tenha, o documento inteiro deverá ser rodado para encontrar o desejado.
 
 - **Cassandra** tem dependências de ter Java 8 e Python 2.7 instalados nas máquinas, enquanto que **MongoDB** não tem necessidade de nada específico.
-
-<!--
----
-### Referências
-
-- [The Server Side](https://www.theserverside.com/tip/A-side-by-side-comparison-of-MongoDB-and-Cassandra-databases) - último acesso 14 de outubro de 2019
-
-- [Panoplay Blog](https://blog.panoply.io/cassandra-vs-mongodb) - último acesso 14 de outubro de 2019
-
-- [MongoDB](https://docs.mongodb.com) -->
