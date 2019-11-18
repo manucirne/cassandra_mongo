@@ -2,6 +2,11 @@
 
 Esse projeto visa enteder quais as vantagens e desvantagens de cada um desses gerenciadores de banco de dados open source. Haverá um tutorial de instalação para cada um deles e junto uma comparação dos dois e em que momentos um é mais aconselhável que o outro.
 
+Criado por:
+
+- [André Ejzenmesser](https://github.com/decoejz)
+- [Manoela Campos](https://github.com/manucirne)
+
 ---
 ## MongoDB
 
