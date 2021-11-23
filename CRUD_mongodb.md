@@ -4,34 +4,34 @@ Informações retiradas do [site oficial](https://docs.mongodb.com/manual/crud/)
 
 Nesse tutorial será ensinado como fazer um crud (Create, Read, Update, Delete) utilizando o gerenciador MongoDB. Para seguir este tutorial você deve ter o MongoDB instalado na sua máquina e rodando ele. Caso ainda não tenha, basta seguir o [tutorial de instalação](https://github.com/decoejz/cassandra-mongodb/blob/master/mongodb.md).
 
-1) [Entendendo MongoDB](#1-Entendendo-MongoDB)
+0) [Entendendo MongoDB](#1-Entendendo-MongoDB)
 
     - [Criando uma Base de Dados](#Criando-uma-Base-de-Dados)
     - [Criando uma Coleção](#Criando-uma-Coleção)
 
-2) [Inserindo Dados](#2-Inserindo-Dados)
+1) [Inserindo Dados](#2-Inserindo-Dados)
 
     - [Adicionando um Dado](#Adicionando-um-Dado)
     - [Adicionando Vários Dado](#Adicionando-Vários-Dados)
 
-3) [Lendo Dados](#3-Lendo-Dados)
+2) [Lendo Dados](#3-Lendo-Dados)
 
     - [Todos os Dados](#Todos-os-Dados)
     - [Query](#Query)
 
-4) [Alterando Dados](#4-Alterando-Dados)
+3) [Alterando Dados](#4-Alterando-Dados)
 
     - [Alterar uma Informação](#Alterar-uma-Informação)
     - [Alterar Várias Informações](#Alterar-Várias-Informações)
     - [Substituir uma Informação](#Substituir-uma-Informação)
 
-5) [Deletando Informações](#5-Deletando-Informações)
+4) [Deletando Informações](#5-Deletando-Informações)
 
     - [Deletar uma Informação](#Deletando-uma-Informação)
     - [Deletar Várias Informações](#Deletando-Diversas-Informações)
 
 ---
-## 1. Entendendo MongoDB
+## 0. Entendendo MongoDB
 
 MongoDB, assim como banco de dados relacionais tem diferentes bases de dados. Cada base de dados pode conter diversas tabelas, conhecidas em Mongo como colection (coleções).
 
@@ -60,7 +60,7 @@ Existem duas formas de adicionar uma nova coleção.
 2) Caso tenha o desejo de especificar restrições, é possível criar uma nova coleção utilizando o método de criação do MongoDB. Para isso utilize o comando `db.createCollection(nomeDesejado, opções)`. Existem diversas opções que podem ser inseridas no momento de criação de uma coleção. Todas elas podem ser encontradas no [site](https://docs.mongodb.com/manual/reference/method/db.createCollection/#db.createCollection).
 
 ---
-## 2. Inserindo Dados
+## 1. Inserindo Dados
 
 Para adicionar dados a uma coleção, existem dois métodos. Um para adicionar apenas uma informação por vez e outro que adiciona diversos dados de uma vez só.
 
@@ -100,7 +100,7 @@ db.nomeDaColecao.insertMany(
 ```
 
 ---
-## 3. Lendo Dados
+## 2. Lendo Dados
 
 As operações de leitura retornam as informações contidas na coleção que esta sendo analisada. É possível pegar todos os dados de uma vez só ou criar queries para visualizar apenas os dados desejados.
 
@@ -165,7 +165,7 @@ SELECT donos FROM nomeDaColecao WHERE idade = 3
 Para ter mais exemplos de query, entre no [site](https://docs.mongodb.com/manual/tutorial/query-documents/).
 
 ---
-## 4. Alterando Dados
+## 3. Alterando Dados
 
 Em mongo existem três formas possíveis de atualizar uma informação na base de dados. São elas [alterar uma informação](#Alterar-uma-Informação), [alterar várias informações](#Alterar-Várias-Informações) ou [substituir uma informação](#Substituir-uma-Informação)
 
@@ -225,7 +225,7 @@ Esse comando altera todas as informações da primeira ocasião de ter algum ite
 Ele difere do método de [alterar apenas uma informação](#Alterar-uma-Informação) pois caso algum campo na sessão de substituição fique vazio, esse campo deixa de existir. Enquanto que no método de [alterar apenas uma informação](#Alterar-uma-Informação), basta colocar apenas o campo desejado de alteração e apenas ele será alterado, enquanto que os outros campos se mantêm constantes como estavam antes da ação.
 
 ---
-## 5. Deletando Informações
+## 4. Deletando Informações
 
 Em mongo, existem duas possibilidades de deletar um dado. São elas [deletar uma Informação](#Deletando-uma-Informação) e [deletar várias informações](#Deletando-Diversas-Informações).
 
